@@ -108,13 +108,13 @@ reobf {
 jar {
     manifest {
         attributes(
-                'MixinConfigs': 'mixins.experium.json',
+                'MixinConfigs': 'mixins.phobos.json',
                 'tweakClass': 'org.spongepowered.asm.launch.MixinTweaker',
                 'TweakOrder': 0,
                 'FMLCorePluginContainsFMLMod': 'true',
                 'FMLCorePlugin': 'dev._3000IQPlay.experium.mixin.ExperiumMixinLoader',
                 'ForceLoadAsMod': 'true',
-                'FMLAT': 'experium_at.cfg'
+                'FMLAT': 'phobos_at.cfg'
         )
     }
 }
