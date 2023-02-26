@@ -24,7 +24,7 @@ apply plugin: 'org.spongepowered.mixin'
 apply plugin: 'com.github.johnrengelman.shadow'
 
 version project.modVersion
-group project.modGroup //http://maven.apache.org/guides/mini/guide-naming-conventions.html
+group project.modGroup //https://maven.apache.org/guides/mini/guide-naming-conventions.html
 
 sourceCompatibility = targetCompatibility = '1.8'
 compileJava {
@@ -35,7 +35,7 @@ minecraft {
     version = project.forgeVersion
     runDir = 'run'
     mappings = project.mcpVersion
-    coreMod = 'me.earth.phobos.mixin.PhobosMixinLoader'
+    coreMod = 'dev._3000IQPlay.experium.mixin.ExperiumMixinLoader'
     makeObfSourceJar = false
 }
 
@@ -56,11 +56,11 @@ dependencies {
         exclude module: 'gson'
         exclude module: 'commons-io'
     }
-    
-    compile 'club.minnced:java-discord-rpc:2.0.2'
-    
-}
 
+    compile 'club.minnced:java-discord-rpc:2.0.2'
+    //compile 'com.googlecode.json-simple:json-simple:1.1.1'
+
+}
 
 
 task getDeps(type: Copy) {
@@ -83,7 +83,7 @@ processResources {
 
 shadowJar {
     dependencies {
-		include(dependency('club.minnced:java-discord-rpc'))
+        include(dependency('club.minnced:java-discord-rpc'))
         include(dependency('com.googlecode.json-simple:json-simple:1.1.1'))
         include(dependency('org.spongepowered:mixin'))
     }
@@ -94,8 +94,8 @@ shadowJar {
 
 mixin {
     defaultObfuscationEnv searge
-    add sourceSets.main, 'mixins.phobos.refmap.json'
-    
+    add sourceSets.main, 'mixins.experium.refmap.json'
+
 }
 
 reobf {
@@ -108,13 +108,13 @@ reobf {
 jar {
     manifest {
         attributes(
-                'MixinConfigs': 'mixins.phobos.json',
+                'MixinConfigs': 'mixins.experium.json',
                 'tweakClass': 'org.spongepowered.asm.launch.MixinTweaker',
                 'TweakOrder': 0,
                 'FMLCorePluginContainsFMLMod': 'true',
-                'FMLCorePlugin': 'me.earth.phobos.mixin.PhobosMixinLoader',
+                'FMLCorePlugin': 'dev._3000IQPlay.experium.mixin.ExperiumMixinLoader',
                 'ForceLoadAsMod': 'true',
-                'FMLAT': 'phobos_at.cfg'
+                'FMLAT': 'experium_at.cfg'
         )
     }
 }
