@@ -1,0 +1,22 @@
+[
+  {
+    "modid": "phobos",
+    "name": "Phobos",
+    "description": "1.12.2 PvP Client.",
+    "version": "1.9.0",
+    "mcversion": "1.12.2",
+	"logoFile": "phobos.png",
+    "url": "https://discord.gg/RfefRqt3ub",
+    "updateUrl": "https://discord.gg/RfefRqt3ub",
+    "authorList": [
+      "3arthqu4ke",
+      "oHare",
+      "Crystallinqq",
+      "Megyn",
+      "Perry",
+      "Bush"
+    ],
+    "screenshots": [],
+    "dependencies": []
+  }
+]
