@@ -27,5 +27,5 @@ jobs:
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v2
         with:
-          name: Experium-release
+          name: PerryPhobosLatest
           path: ./build/libs/*release.jar  
