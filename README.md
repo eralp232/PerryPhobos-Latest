@@ -1,11 +1,9 @@
 # Perry Phobos
 
-i am a hacker mane hack client hacking
-
 # Credits
 
-- Perry, Bush (Main Dev)
-- Original Phobos Devs 
+- Perry, Bush (Main Devs)
+- Phobos 1.9.0 Devs
 
 # ClickGUI
 
