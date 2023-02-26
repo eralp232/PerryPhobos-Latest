@@ -1,5 +1,7 @@
 # Perry Phobos
 
+Account switcher is broken but who cares
+
 # Credits
 
 - Perry, Bush (Main Devs)
