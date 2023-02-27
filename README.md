@@ -6,6 +6,7 @@ Account switcher is broken but who cares
 
 - Perry, Bush (Main Devs)
 - Phobos 1.9.0 Devs
+- ZANE 
 
 # ClickGUI
 
